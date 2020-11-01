@@ -2691,12 +2691,14 @@ img.lazy:not([src]) {
 	will-change: transform;
 }
 
+/*  
 .mobile-parallax,
 .video-placeholder {
 	background-size: cover !important;
 	background-attachment: scroll !important;
 	background-position: center center !important;
 }
+*/
 
 .section .container { z-index: 2; }
 
@@ -16530,8 +16532,9 @@ label.checkbox { padding-left: 20px; }
 ここから自分でCSS変更したコード 
 ----------------------------------------------------------*/
 
-.service-btn-bt {
-	margin-right: 230px;
+
+.service-text-bg {
+	background-color: rgba(117, 116, 116, 0.712);
 }
 
 .service-text-bd {
@@ -16561,11 +16564,11 @@ label.checkbox { padding-left: 20px; }
 	}
 
 
+
 }
 
 @media screen and (max-width: 991px) {
 	
-
 
 
 }
@@ -16581,8 +16584,33 @@ label.checkbox { padding-left: 20px; }
 		display: block !important;
 	}
 
-	.about-img-sm img {
-		padding-top: 0px;
+	.mobile-parallax {
+	background-size: contain !important;
+	background-attachment: scroll !important;
+	background-position: 25% 75% !important;
+  }
+
+	.section {
+		padding: 20px 0;
 	}
 
 }
+
+/* 背景画像も暗くするのであれば下のコードを使う 
+
+.parallax {
+	position: relative;
+	height:100%;
+}
+
+.parallax::before{
+	background-color: rgba(0,0,0,0.4);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+}
+
+*/
