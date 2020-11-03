@@ -11788,7 +11788,7 @@ body:not(.device-touch) .clients-grid .grid-item a {
 	top: 0;
 	bottom: 0;
 	right: 0;
-	left: 0;
+	left: -15px; /*ここは0から-15に変更*/
 	height: 6px;
 	margin-top: 40px;
 	/* この下は追加したCSS */
@@ -16569,6 +16569,9 @@ label.checkbox { padding-left: 20px; }
 
 @media screen and (max-width: 991px) {
 	
+	.fbox-content-sm h3, .fbox-content-sm p {
+    font-size: 13px;
+}
 
 
 }
@@ -16586,13 +16589,21 @@ label.checkbox { padding-left: 20px; }
 
 	.mobile-parallax {
 	background-size: contain !important;
-	background-attachment: scroll !important;
-	background-position: 25% 75% !important;
+	background-position: 25% 35% !important;
+	padding: 30px 0 !important;
   }
 
 	.section {
 		padding: 20px 0;
 	}
+
+	.col-padding {
+		padding: 20px;
+	}
+
+	.fbox-content-sm h3, .fbox-content-sm p {
+    font-size: 10px;
+}
 
 }
 
